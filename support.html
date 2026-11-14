@@ -5,14 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>薄肌 帮助 · Boji Support</title>
 <style>
-  body { font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1d1d1f; background: #fbfbfd; }
-  h1 { font-size: 28px; } h2 { font-size: 19px; margin-top: 28px; } hr { border: none; border-top: 1px solid #d2d2d7; margin: 40px 0; }
+  :root { --paper:#f4f3ee; --ink:#17191c; --volt:#c8f21c; --mute:#5d6066; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; color:var(--ink); background:var(--paper); }
+  .band { background:var(--ink); color:#fff; padding:28px 20px 24px; }
+  .band .mark { color:var(--volt); font-weight:900; letter-spacing:.25em; font-size:13px; }
+  .band .tag { font-weight:900; font-stretch:condensed; font-size:40px; line-height:1.05; margin:8px 0 0; }
+  .band .tag b { color:var(--volt); }
+  main { max-width:720px; margin:0 auto; padding:8px 20px 48px; }
+  h1 { font-size:30px; font-weight:900; margin:32px 0 8px; }
+  h2 { font-size:15px; font-weight:900; letter-spacing:.06em; margin:28px 0 6px; padding-left:10px; border-left:6px solid var(--volt); }
+  .muted { color:var(--mute); } a { color:var(--ink); text-decoration-color:var(--volt); text-decoration-thickness:3px; }
+  hr { border:none; border-top:2px solid var(--ink); margin:44px 0; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#101113; --ink:#f4f3ee; --mute:#a3a6ab; } .band { background:#000; } }
 </style>
 </head>
 <body>
+<div class="band"><div class="mark">BOJI · 薄肌</div><p class="tag">减脂，<b>不掉肌肉</b><br>Lose fat, <b>keep muscle</b></p></div>
+<main>
 <h1>薄肌 帮助</h1>
+<h2>「掉的是脂肪还是肌肉」怎么看？</h2>
+<p>用能测体脂率的体重秤称重并同步到「健康」。有两次以上、隔一周以上的称重，首屏就会把体重变化拆成脂肪和去脂体重。体脂秤单次读数误差大，薄肌比较的是最早 3 次和最近 3 次的平均，看几周的趋势。</p>
 <h2>怎么拍食物？</h2>
-<p>打开「拍食物」，对着食物慢慢移动手机，不用按快门。每样食物上方会浮出千焦数字；Pro 机型绕着食物转一圈，重量量得更准。</p>
+<p>打开「扫饭菜」，对着食物慢慢移动手机，不用按快门。每样食物上方会浮出千焦和蛋白质；Pro 机型绕着食物转一圈，重量量得更准。</p>
 <h2>认错了怎么办？</h2>
 <p>点那个数字，选「自己选」改成正确的食物。薄肌会记住，下次自动认出。没被认出来的东西，直接在画面上点它一下。</p>
 <h2>包装食品怎么算？</h2>
@@ -25,8 +40,10 @@
 <p>请在 <a href="https://github.com/caffeinated-null-pointer/boji-legal/issues">这里</a> 留言。</p>
 <hr>
 <h1>Boji Support</h1>
+<h2>How does "fat or muscle?" work?</h2>
+<p>Weigh yourself on a scale that measures body fat and syncs to Apple Health. With two or more weigh-ins at least a week apart, the first screen splits your weight change into fat and lean mass. Single readings are noisy, so Boji compares the average of the first 3 and the latest 3 and looks at weeks, not days.</p>
 <h2>How do I scan food?</h2>
-<p>Open Scan and move your phone slowly over your food. No shutter button needed. Each food gets a floating kilojoule label; on Pro iPhones, circle the food for a better weight.</p>
+<p>Open Scan and move your phone slowly over your food. No shutter button needed. Each food gets a floating label with kilojoules and protein; on Pro iPhones, circle the food for a better weight.</p>
 <h2>It got a food wrong</h2>
 <p>Tap the number, choose the right food, and Boji remembers it next time. If something isn't picked up at all, tap it on screen.</p>
 <h2>Packaged food</h2>
@@ -37,5 +54,6 @@
 <p>Everything is analysed on your phone; no photos or health data are uploaded. See the <a href="index.html">privacy policy</a>.</p>
 <h2>Contact</h2>
 <p>Please open an issue <a href="https://github.com/caffeinated-null-pointer/boji-legal/issues">here</a>.</p>
+</main>
 </body>
 </html>

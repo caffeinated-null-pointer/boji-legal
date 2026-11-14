@@ -5,19 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>薄肌 隐私政策 · Boji Privacy Policy</title>
 <style>
-  body { font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px; color: #1d1d1f; background: #fbfbfd; }
-  h1 { font-size: 28px; } h2 { font-size: 20px; margin-top: 32px; }
-  .muted { color: #6e6e73; } hr { border: none; border-top: 1px solid #d2d2d7; margin: 40px 0; }
+  :root { --paper:#f4f3ee; --ink:#17191c; --volt:#c8f21c; --mute:#5d6066; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; color:var(--ink); background:var(--paper); }
+  .band { background:var(--ink); color:#fff; padding:28px 20px 24px; }
+  .band .mark { color:var(--volt); font-weight:900; letter-spacing:.25em; font-size:13px; }
+  .band .tag { font-weight:900; font-stretch:condensed; font-size:40px; line-height:1.05; margin:8px 0 0; }
+  .band .tag b { color:var(--volt); }
+  main { max-width:720px; margin:0 auto; padding:8px 20px 48px; }
+  h1 { font-size:30px; font-weight:900; margin:32px 0 8px; }
+  h2 { font-size:15px; font-weight:900; letter-spacing:.06em; margin:28px 0 6px; padding-left:10px; border-left:6px solid var(--volt); }
+  .muted { color:var(--mute); } a { color:var(--ink); text-decoration-color:var(--volt); text-decoration-thickness:3px; }
+  hr { border:none; border-top:2px solid var(--ink); margin:44px 0; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#101113; --ink:#f4f3ee; --mute:#a3a6ab; } .band { background:#000; } }
 </style>
 </head>
 <body>
+<div class="band"><div class="mark">BOJI · 薄肌</div><p class="tag">减脂，<b>不掉肌肉</b><br>Lose fat, <b>keep muscle</b></p></div>
+<main>
 <h1>薄肌 隐私政策</h1>
-<p class="muted">生效日期：2026 年 10 月 27 日（更新：加入条码查询、饮水记录、纠正记忆）</p>
+<p class="muted">生效日期：2026 年 10 月 27 日（2026 年 11 月 14 日更新：加入脂肪 / 去脂体重趋势）</p>
 
-<p>「薄肌」是一款帮你练出精瘦肌肉的健身 App。我们把隐私放在第一位：<strong>你的数据只在你的 iPhone 上处理，我们没有服务器，不收集、不出售任何个人数据。</strong>唯一联网的地方是扫商品条码（见第 4 条）。</p>
+<p>「薄肌」帮你减脂的时候不掉肌肉：把「健康」里体脂秤的称重拆成脂肪和去脂体重，并用 AR 在饭菜上显示千焦和蛋白质。我们把隐私放在第一位：<strong>你的数据只在你的 iPhone 上处理，我们没有服务器，不收集、不出售任何个人数据。</strong>唯一联网的地方是扫商品条码（见第 4 条）。</p>
 
 <h2>1. 健康数据（HealthKit）</h2>
-<p>在你同意后，薄肌会从 Apple「健康」读取：步数、运动消耗、睡眠、静息心率、心率变异性、体重、体脂率、饮水、蛋白质和饮食热量、训练记录。这些数据只用于在手机本地计算今日目标和生成建议。</p>
+<p>在你同意后，薄肌会从 Apple「健康」读取：步数、运动消耗、睡眠、静息心率、心率变异性、体重、体脂率、饮水、蛋白质和饮食热量、训练记录。这些数据只用于在手机本地计算今日目标、脂肪 / 去脂体重的变化趋势和生成建议。</p>
 <p>为了按你的身体算每日目标，薄肌还会读取身高、性别和出生日期（只用来在手机上算基础代谢）。</p>
 <p>你在薄肌里「记下来」的食物（热量、蛋白质）和「喝了一杯水」，会写入 Apple「健康」，食物记录可以在薄肌里修改或删除；喝水记录请在「健康」App 里删除。</p>
 <p>健康数据绝不会用于广告，也不会分享给任何第三方。</p>
@@ -54,10 +66,10 @@
 <hr>
 
 <h1>Boji Privacy Policy</h1>
-<p class="muted">Effective: 27 October 2026 (updated: barcode lookup, water logging, correction memory)</p>
-<p>Boji is a lean-muscle fitness app. <strong>Your data is processed on your iPhone. We run no servers and collect or sell no personal data.</strong> The only network use is barcode lookup (below).</p>
+<p class="muted">Effective: 27 October 2026 (updated 14 November 2026: fat and lean mass trend)</p>
+<p>Boji helps you lose fat without losing muscle: it splits smart-scale weigh-ins from Apple Health into fat and lean mass, and shows kilojoules and protein over your food in AR. <strong>Your data is processed on your iPhone. We run no servers and collect or sell no personal data.</strong> The only network use is barcode lookup (below).</p>
 <h2>Health data (HealthKit)</h2>
-<p>With your permission, Boji reads steps, active energy, sleep, resting heart rate, heart rate variability, body mass, body fat, water, protein, dietary energy and workouts from Apple Health, only to calculate daily targets and advice on your device. Foods you log are written to Apple Health as dietary energy and protein; you can edit or delete them in Boji. Water you log can be deleted in the Health app. Health data is never used for advertising and never shared with third parties.</p>
+<p>With your permission, Boji reads steps, active energy, sleep, resting heart rate, heart rate variability, body mass, body fat, water, protein, dietary energy and workouts from Apple Health, only to calculate daily targets, your fat and lean mass trend, and advice on your device. Foods you log are written to Apple Health as dietary energy and protein; you can edit or delete them in Boji. Water you log can be deleted in the Health app. Health data is never used for advertising and never shared with third parties.</p>
 <h2>Profile, water and corrections</h2>
 <p>Boji reads height, sex and date of birth from Apple Health only to calculate your daily target on device. Water you log is written to Apple Health. When you correct a misrecognised food, Boji stores an image feature print (a list of numbers describing appearance, not a photo) on your device so it can recognise that food next time.</p>
 <h2>Barcode lookup</h2>
@@ -72,5 +84,6 @@
 <p>No accounts, no ads, no analytics or tracking SDKs, no data sale or sharing. We do not knowingly collect information from anyone, including children under 13.</p>
 <h2>Contact</h2>
 <p>Email missionary1802@gmail.com or open an issue <a href="https://github.com/caffeinated-null-pointer/boji-legal/issues">here</a>.</p>
+</main>
 </body>
 </html>
